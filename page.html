@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Math Quiz.com/Login</title>
+</head>
+<body style="background-color: red;">
+<center>
+<h1 id="login_H1" style="color: blue;">Login</h1>
+<br>
+<br>
+<input id="tx_us_1" style="width: 300px; background-color: blue; color: yellow;" type="password" placeholder="User Name of Player 1">
+<br>
+<br>
+<input id="tx_us_2" style="width: 300px; background-color: blue; color: yellow;" type="password" placeholder="User Name of Player 2">
+<br>
+<br>
+<button onclick="f();" style="color:red; background-color: black;" id="rb_catp">Click on me!!</button> click on this button before clicking on Login to ensure you are not a robot. 
+<br>
+<br>
+<button onclick="a();" id="yh" style="background-color: black; color: yellow;">Login</button>
+</center>
+<script>
+var n = 0;
+l=document.getElementById("rb_catp").onclick;
+function f(){
+n=n+1;
+}
+function a(){
+if((n>0)&&(l=true)){
+window.location.href='real.html';
+}
+else{
+window.alert("Please click on the button.")
+}
+}
+</script>
+</body>
+</html>
